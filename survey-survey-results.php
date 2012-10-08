@@ -4,23 +4,23 @@
   // Retrieve the question  
   $question = mysql_query("SELECT question FROM surveyTbl") or die ("Could not fetch answer data");
   // Retrieve number of rows of the first answer   
-  $answerone = mysql_query("SELECT SQL_CALC_FOUND_ROWS * FROM surveyTbl WHERE answer='2011 ECFMG Certificant profile'") or die ("Could not fetch answer data");
+  $answerone = mysql_query("SELECT SQL_CALC_FOUND_ROWS * FROM surveyTbl WHERE answer='IMGs in U.S. GME, by country of medical school'") or die ("Could not fetch answer data");
   $answeronenum = mysql_num_rows($answerone);// returns total number of rows that matches the string in the WHERE clause
   $answeroneprint = mysql_fetch_assoc($answerone);//returns an array of strings
   // Retrieve number of rows of the second answer   
-  $answertwo = mysql_query("SELECT SQL_CALC_FOUND_ROWS * FROM surveyTbl WHERE answer='Aggregate USMLE Performance data'") or die ("Could not fetch answer data");
+  $answertwo = mysql_query("SELECT SQL_CALC_FOUND_ROWS * FROM surveyTbl WHERE answer='IMGs in U.S. GME, by state and specialty'") or die ("Could not fetch answer data");
   $answertwonum = mysql_num_rows($answertwo);
   $answertwoprint = mysql_fetch_assoc($answertwo);
   // Retrieve number of rows of the third answer   
-  $answerthree = mysql_query("SELECT SQL_CALC_FOUND_ROWS * FROM surveyTbl WHERE answer='IMGs in U.S. GME, by state and specialty'") or die ("Could not fetch answer data");
+  $answerthree = mysql_query("SELECT SQL_CALC_FOUND_ROWS * FROM surveyTbl WHERE answer='IMGs in the 2012 Match'") or die ("Could not fetch answer data");
   $answerthreenum = mysql_num_rows($answerthree);
   $answerthreeprint = mysql_fetch_assoc($answerthree);
   // Retrieve number of rows of the fourth answer   
-  $answerfour = mysql_query("SELECT SQL_CALC_FOUND_ROWS * FROM surveyTbl WHERE answer='IMGs in U.S. GME, by country of medical school'") or die ("Could not fetch answer data");
+  $answerfour = mysql_query("SELECT SQL_CALC_FOUND_ROWS * FROM surveyTbl WHERE answer='Profile of 2011 ECFMG Certificants'") or die ("Could not fetch answer data");
   $answerfournum = mysql_num_rows($answerfour);
   $answerfourprint = mysql_fetch_assoc($answerfour);
   // Retrieve number of rows of the fifth answer   
-  $answerfive = mysql_query("SELECT SQL_CALC_FOUND_ROWS * FROM surveyTbl WHERE answer='IMGs in the 2012 Match'") or die ("Could not fetch answer data");
+  $answerfive = mysql_query("SELECT SQL_CALC_FOUND_ROWS * FROM surveyTbl WHERE answer='Aggregate USMLE performance data'") or die ("Could not fetch answer data");
   $answerfivenum = mysql_num_rows($answerfive);
   $answerfiveprint = mysql_fetch_assoc($answerfive);
   
