@@ -1,6 +1,6 @@
 <? 
 	include ('../common/header.php'); 
-	require_once ('../uhusiano/survey-uhusiano.php'); // Connect to the db.
+	require_once ('../path to connection file'); // Connect to the db.
   echo "<h3>Search ECHO Survey Database</h3>" . PHP_EOL;
   echo "<div class='echo-survey' style='overflow:hidden;'>" . PHP_EOL; 
   if(!isset($_GET['submit'])) {//if form is not submitted, show the form
