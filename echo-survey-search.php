@@ -272,7 +272,7 @@ if (empty($question)&&empty($answer)&&!empty($month)) { // if only month
     echo "<p><a href='" . $_SERVER['PHP_SELF'] . "'>Start a new search</a></p><br />" . PHP_EOL; 
 	}
 }
-echo "<a href='index.php'>Take a survey</a>" . PHP_EOL;
+echo "<a href='index.php'>Take a survey</a><br /><br />" . PHP_EOL;
 echo "</div><!-- end echo-survey -->" . PHP_EOL;
 include ('../common/footer.php');
 ?>
